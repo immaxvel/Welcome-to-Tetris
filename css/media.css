@@ -1,0 +1,182 @@
+@media all and (max-width: 1400px) {
+  .modal-uprav .discription-control,
+  .modal-records .discription-records,
+  .modal-about .discription-about {
+    left: 25%;
+  }
+}
+
+@media all and (max-width: 1158px) {
+  .game-over {
+    font-size: 100px;
+    padding-top: 200px;
+  }
+  .modal-uprav .discription-control,
+  .modal-records .discription-records,
+  .modal-about .discription-about {
+    width: 50%;
+  }
+
+  @media all and (max-width: 1056px) {
+    .modal-uprav .discription-control,
+    .modal-records .discription-records,
+    .modal-about .discription-about {
+      width: 50%;
+    }
+    .modal-uprav .discription-control li,
+    .modal-about .discription-about p {
+      width: 500px;
+      display: block;
+    }
+    .modal-uprav .discription-control h1,
+    .modal-records .discription-records h1,
+    .modal-about .discription-about h1 {
+      margin: 0 auto;
+      font-size: 30px;
+    }
+    .modal-records .discription-records li {
+      font-size: 25px;
+    }
+  }
+  @media all and (max-width: 882px) {
+    .modal-uprav .discription-control li {
+      width: 400px;
+      font-size: 15px;
+    }
+
+    .modal-uprav .discription-control,
+    .modal-about .discription-about {
+      left: 15%;
+      width: 250px;
+    }
+  }
+
+  @media all and (max-width: 640px) {
+    .modal-uprav .discription-control,
+    .modal-about .discription-about {
+      left: 10%;
+      width: 250px;
+    }
+    .modal-uprav .discription-control li {
+      width: 300px;
+    }
+    .modal-about .discription-about p {
+      width: 300px;
+    }
+    .modal-records .discription-records {
+      left: 10%;
+    }
+    .modal-records .discription-records li {
+      width: 300px;
+    }
+  }
+
+  @media all and (max-width: 662px) {
+    .welcome {
+      padding: 0;
+      font-size: 30px;
+      margin: 0 auto;
+    }
+    header h1 {
+      display: flex;
+      width: 500px;
+      justify-content: center;
+    }
+    .game-area {
+      margin-top: 10px;
+    }
+  }
+  @media all and (max-width: 560px) {
+    .button{
+      font-size: 12px;
+    }
+    .button:hover {
+      transform: scale(1.1);
+    }
+    .control1,
+    .control2,
+    .control3,
+    .control4,
+    .control5 {
+      display: inline-flex;
+      flex-wrap: wrap;
+      margin-left: 10%;
+      transform: scale(1.1);
+    }
+
+    .control5 {
+      justify-content: center;
+      width: 60px;
+      border-radius: 50%;
+      margin: 4px 45%;
+    }
+
+    .control5:hover {
+      transform: scale(1.1);
+    }
+    header h1 {
+      display: flex;
+      width: 400px;
+      justify-content: center;
+    }
+
+    @media all and (max-width: 500px) {
+      .control1,
+      .control2,
+      .control3,
+      .control4 {
+        margin-left: 10%;
+      }
+      .control5 {
+        margin: 4px 45%;
+      }
+    }
+    @media all and (max-width: 468px) {
+      .control1,
+      .control2,
+      .control3,
+      .control4 {
+        margin-left: 8%;
+      }
+    }
+    @media all and (max-width: 420px) {
+      .control1,
+      .control2,
+      .control3,
+      .control4 {
+        margin-left: 6%;
+      }
+    }
+    .control5 {
+      margin: 4px 42%;
+    }
+
+    .display {
+      width: 13.5rem;
+    }
+
+    .button {
+      width: 13rem;
+      margin-left: 0;
+    }
+    .welcome{
+      width: 300px;
+    }
+  }
+
+  @media all and (max-width: 380px) {
+    .display {
+      width: 12.5rem;
+    }
+
+    .button {
+      width: 12rem;
+    }
+    .welcome{
+      width: 280px;
+    }
+    .control5 {
+      margin: 4px 40%;
+    }
+  }
+}

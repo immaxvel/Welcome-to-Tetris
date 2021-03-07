@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Welcome to Tetris!</title>
+  <script src="js/app.js"></script>
+  <script src="js/swiped-events.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <video autoplay loop muted class="bgvideo" id="bgvideo">
+    <source src="./audio/wppr.mp4" type="video/mp4">
+    </source>
+  </video>
+  <div class="modal-uprav" data-swipe-threshold="20" data-swipe-timeout="500" data-swipe-ignore="false">
+    <div class="discription-control">
+      <h1>Управление</h1>
+      <ul>
+        <li>Чтобы начать игру нажмите кнопку : Старт/Пауза</li>
+        <li>Для движения фигуры ВЛЕВО нажмите кнопку: ← либо <img src="./images/arrow-left.jpg"> </li>
+        <li>Для движения фигуры ВПРАВО нажмите кнопку: → либо <img src="./images/arrow-right.jpg"> </li>
+        <li>Для ПОВОРОТА фигуры нажмите кнопку: ↑ либо <img src="./images/arrow-top.jpg"> </li>
+        <li>Для движения фигуры ВНИЗ нажмите кнопку: ↓ либо <img src="./images/arrow-down.jpg"> </li>
+        <li>Для ВЫКЛЮЧЕНИЯ музыки нажмите кнопку: <img src="./images/mute.png"> </li>
+      </ul>
+    </div>
+
+    <button class="closeU"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="modal-records">
+    <div class="discription-records">
+      <H1>Рекорды</H1>
+      <ul>
+        <li class="first">Player 1 : 300 pts</li>
+        <li class="second">Player 2 : 250 pts</li>
+        <li class="third">Player 3 : 180 pts</li>
+        <li>Player 4 : 100 pts</li>
+        <li>Player 5 : 80 pts</li>
+      </ul>
+    </div>
+    <button class="closeR"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="modal-about">
+    <div class="discription-about">
+      <H1>О Игре</H1>
+      <p><span>Те́трис</span> (производное от «тетрамино» и «теннис») — компьютерная игра, первоначально изобретённая и
+        разработанная советским программистом <span>Алексеем Пажитновым</span>. Игра была выпущена 6 июня 1984 года — в
+        это время Пажитнов работал в Вычислительном центре Академии наук СССР. <br>
+        «Тетрис» представляет собой головоломку, построенную на использовании геометрических фигур «тетрамино» —
+        разновидности полимино, состоящих из четырёх квадратов. </p>
+    </div>
+    <button class="closeA"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="game-over">
+    GAME OVER
+    <input id="name" type="text" value="Введите имя"></input>
+    <input type="submit" id="result" value="Сохранить результат"></input>
+    <button class="restartGame" id="reset">Играть снова</button>
+  </div>
+  <header>
+    <h1 class="welcome">Welcome To Tetris</h1>
+  </header>
+  <main class="game-area">
+    <div class="game">
+      <div class="grid"></div>
+    </div>
+    <section>
+      <div class="display">
+        <h1 class="score">Счет<br> <span class="score-display">0</span></h1>
+        <div class="previous-shape">
+          <div class="previous-grid"></div>
+        </div>
+        <h2 class="lines-display">Линий:<span class="lines-score"> 0 </span></h2>
+      </div>
+      <button class="button" href="#">Старт / Пауза</button>
+      <audio class="zvuk" src="./audio/tetris.mp3" loop></audio>
+      <audio class="sad" src="./audio/sad.mp3"></audio>
+      <audio class="boom" src="./audio/boom.mp3"></audio>
+      <audio class="peeek" src="./audio/peeek.mp3"></audio>
+      <audio class="tyc" src="./audio/tyc.mp3"></audio>
+      <audio class="atom" src="./audio/atom.mp3"></audio>
+      <button id="uprav" class="button" href="#">Управление</button>
+      <button id="record" class="button" href="#">Рекорды</button>
+      <button id="about" class="button" href="#">О игре</button>
+    </section>
+  </main>
+  <button class="control1"></button>
+  <button class="control4"></button>
+  <button class="control3"></button>
+  <button class="control2"></button>
+  <button class="control5"></button>
+</body>
+
+</html>
